@@ -1,8 +1,10 @@
 package starcraft;
 
 public class SCV extends GroundUnit implements Repairable{
-
-	public SCV(String name,int hp){
+	protected static String name = "SCV";
+	protected static int hp = 80;
+	private int damage = 10;
+	public SCV(){
 		super(name,hp);
 	}
 	
@@ -21,4 +23,20 @@ public class SCV extends GroundUnit implements Repairable{
 			System.out.printf("%s 수리완료!\n",target.name);
 		}
 	}
+
+	@Override
+	public void attack(Unit unit) {
+		if(hp==0) {
+			System.out.println("체력이 없어 공격할 수 없습니다.");
+			return;
+		}
+		Unit target = (Unit)unit;
+		if(target.hp-damage<0) {
+			target.hp =0;
+		}else {
+			target.hp-=damage;
+		}
+	}
+
+	
 }

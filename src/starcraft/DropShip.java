@@ -1,8 +1,10 @@
 package starcraft;
 
 public class DropShip extends AirUnit implements Repairable{
-	
-	public DropShip(String name, int hp) {
+	protected static String name = "SHIP";
+	protected static int hp = 100;
+	public DropShip() {
 		super(name, hp);
 	}
+	
 }
