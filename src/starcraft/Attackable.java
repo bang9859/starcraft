@@ -1,5 +1,5 @@
 package starcraft;
 
 public interface Attackable {
-	void attack();
+	void attack(Unit unit);
 }
