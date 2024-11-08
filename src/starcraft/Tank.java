@@ -9,6 +9,11 @@ public class Tank extends GroundUnit implements Repairable{
 		super(name, hp);
 	}
 
+	public int getHp() {
+		return hp;
+	}
+	
+	
 	@Override
 	public void attack(Unit unit) {
 		if(hp==0) {

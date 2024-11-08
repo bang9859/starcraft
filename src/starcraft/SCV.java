@@ -8,6 +8,10 @@ public class SCV extends GroundUnit implements Repairable{
 		super(name,hp);
 	}
 	
+	public int getHp() {
+		return hp;
+	}
+	
 	public void repair(Repairable unit) {
 		if(unit instanceof Unit) {
 			Unit target = (Unit)unit;
