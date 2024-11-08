@@ -15,7 +15,7 @@ public class SCV extends GroundUnit implements Repairable{
 	public void repair(Repairable unit) {
 		if(unit instanceof Unit) {
 			Unit target = (Unit)unit;
-			while(target.hp>target.MAX_HP) {
+			while(target.hp<target.MAX_HP) {
 				String msg = String.format("%s [%d/%d] 수리중...", target.name,target.hp++,target.MAX_HP);
 				System.out.println(msg);
 				try {
