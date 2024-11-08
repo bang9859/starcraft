@@ -1,6 +1,11 @@
 package starcraft;
 
 public class StarcraftGame {
+	Marine marin;
+	Tank tank;
+	SCV scv;
+	DropShip ship;
+	
 	private StarcraftGame(){
 		
 	}
@@ -11,7 +16,23 @@ public class StarcraftGame {
 	}
 	
 	public void run() {
+		setUnit();
+		while(true) {
+			play();
+		}
+	}
+	
+	private void setUnit() {
+		marin = new Marine();
+		tank = new Tank();
+		scv = new SCV();
+		ship = new DropShip();
+	}
+
+	private void play() {
 		
 	}
+	
+	
 	
 }
