@@ -1,6 +1,9 @@
 package starcraft;
 
 public class Starcraft {
-	StarcraftGame game = StarcraftGame.getInstance();
-	game.run();
+	public static void main(String[] args) {
+		
+		StarcraftGame game = StarcraftGame.getInstance();
+		game.run();
+	}
 }
