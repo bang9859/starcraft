@@ -13,7 +13,6 @@ public class Tank extends GroundUnit implements Repairable{
 		return hp;
 	}
 	
-	
 	@Override
 	public void attack(Unit unit) {
 		if(hp==0) {
@@ -29,3 +28,4 @@ public class Tank extends GroundUnit implements Repairable{
 	}
 
 }
+//

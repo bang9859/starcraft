@@ -42,5 +42,5 @@ public class SCV extends GroundUnit implements Repairable{
 		}
 	}
 
-	
+	//
 }
